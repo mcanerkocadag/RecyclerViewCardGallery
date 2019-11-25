@@ -1,14 +1,14 @@
 package com.gallery.recyclerviewcard;
 
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.Toast;
+
 import com.gallery.jameson.library.CardAdapterHelper;
 import java.util.List;
-
-import jameson.io.library.util.ToastUtils;
 
 class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
     private List<Integer> mList;
@@ -32,7 +32,7 @@ class CardAdapter extends RecyclerView.Adapter<CardAdapter.ViewHolder> {
         holder.mImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ToastUtils.show(holder.mImageView.getContext(), "" + position);
+                Toast.makeText(holder.mImageView.getContext(), "" + position,Toast.LENGTH_LONG).show();
             }
         });
     }

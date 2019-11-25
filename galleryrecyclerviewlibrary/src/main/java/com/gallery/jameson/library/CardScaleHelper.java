@@ -1,7 +1,9 @@
 package com.gallery.jameson.library;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
+
+import android.util.Log;
 import android.view.View;
 
 import jameson.io.library.util.LogUtils;
@@ -110,7 +112,7 @@ public class CardScaleHelper {
         int offset = mCurrentItemOffset - mCurrentItemPos * mOnePageWidth;
         float percent = (float) Math.max(Math.abs(offset) * 1.0 / mOnePageWidth, 0.0001);
 
-        LogUtils.d(String.format("offset=%s, percent=%s", offset, percent));
+        Log.i("CardGallery",String.format("offset=%s, percent=%s", offset, percent));
         View leftView = null;
         View currentView;
         View rightView = null;

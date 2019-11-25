@@ -1,17 +1,16 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.3"
+    compileSdkVersion 29
+    buildToolsVersion '29.0.2'
 
     defaultConfig {
         applicationId "com.gallery.recyclerviewcard"
         minSdkVersion 17
-        targetSdkVersion 23
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
 
-        //启用renderscript
         renderscriptTargetApi = 18
         renderscriptSupportModeEnabled = true
     }
@@ -24,7 +23,9 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile project(':galleryrecyclerviewlibrary')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.12'
+    implementation project(':galleryrecyclerviewlibrary')
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
 }

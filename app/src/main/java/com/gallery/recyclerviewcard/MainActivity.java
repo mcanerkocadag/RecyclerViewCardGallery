@@ -6,10 +6,12 @@ import android.graphics.BitmapFactory;
 import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.gallery.jameson.library.CardScaleHelper;
 import com.gallery.jameson.library.util.BlurBitmapUtils;
 import com.gallery.jameson.library.util.ViewSwitchUtils;
