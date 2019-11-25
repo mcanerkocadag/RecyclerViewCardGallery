@@ -22,7 +22,7 @@ Step 1. Add the JitPack repository to your build file
    
 ```python
    dependencies {
-	        implementation 'com.github.mcanerkocadag:RecyclerViewCardGallery:Tag'
+	         implementation 'com.github.mcanerkocadag:RecyclerViewCardGallery:1.0.2'
 	}
    ```
 
